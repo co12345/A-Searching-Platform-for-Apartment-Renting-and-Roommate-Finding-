@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="css/htmleaf-demo.css">
+    <link rel="stylesheet" type="text/css" href="bootstrap/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="bootstrap/3.3.6/css/bootstrap-response.min.css">
+    <link rel="stylesheet" href="css/style.css"/>
+    <link rel="stylesheet" href="css/main.css"/>
+    <title>Title</title>
+</head>
+<body>
+<div>
+    <div class="topnav">
+        <a href="/">Home</a> <a href="/TenantPage">Tenants</a> <a href="/RoommatePage">Roommates</a> <a href="/landlordPage">Residences</a> <a href="/contact">Contact us</a>
+    </div>
+    <div class = "pagebody">
+        <div class = "pagehead">
+            <div class="pageLogo">
+                <img id="logo" src="/img/logo.png">
+            </div>
+        </div>
+        <div class = "banner">
+            <a href="/tenantshow">
+
+                <img id="banner1" src="/img/shuffleTenant.jpg">
+            </a>
+        </div>
+
+
+        <div class="formtable">
+            <form class="form-horizontal"  action="/RoommatePage" method="POST">
+                <fieldset>
+                    <div id="tableTitle">
+                        <h1>
+                            Host register
+                        </h1>
+                    </div><!-- Text input-->
+                   
+                    <div class="form-group">
+                        <label class="col-md-4 control-label" for="selectbasic0">Gender</label>
+                        <div class="col-md-4">
+                            <select id="selectbasic0" name="gender" class="form-control">
+                                <option value="Male">Male</option>
+                                <option value="Female">Female</option>
+                                <option value="Not Listed">Not listed here</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="col-md-4 control-label" for="textinput0">Residence Name</label>
+                        <div class="col-md-4">
+                            <input id="textinput0" name="name" type="text" placeholder="Name" class="form-control input-md">
+                        </div>
+                    </div><!-- Text input-->
+                    <div class="form-group">
+                        <label class="col-md-4 control-label" for="textinput1">Address</label>
+                        <div class="col-md-4">
+                            <input id="textinput1" name="address" type="text" placeholder="Address" class="form-control input-md"> 
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="col-md-4 control-label" for="selectbasic">District</label>
+                        <div class="col-md-4">
+                            <select id="selectbasic" name="district" class="form-control">
+                                <option value="Oakland">Oakland</option>
+                                <option value="Shadyside">Shadyside</option>
+                                <option value="Squirrel Hill">Squirrel Hill</option>
+                            </select>
+                        </div>
+                    </div>
+
+
+                    <!-- Multiple Radios (inline) -->
+                    <div class="form-group">
+                        <label class="col-md-4 control-label" for="textinput2">Rent</label>
+                        <div class="col-md-4">
+                            <input id="textinput2" name="rent" type="text" placeholder="Expected Rent" class="form-control input-md">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="col-md-4 control-label" for="textinput3">Email Address</label>
+                        <div class="col-md-4">
+                            <input id="textinput3" name="email" type="text" placeholder="Email" class="form-control input-md">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="col-md-4 control-label" for="radios0">Number of Bedroom</label>
+                        <div class="col-md-4">
+                            <label id="radios0" class="radio-inline" for="radios-0"><input type="radio" name="bedroom" id="radios-0" value="1" checked="checked"> 1</label> <label class="radio-inline" for="radios-1"><input type="radio" name="bedroom" id="radios-1" value="2"> 2</label> <label class="radio-inline" for="radios-2"><input type="radio" name="bedroom" id="radios-2" value="3"> 3</label> <label class="radio-inline" for="radios-3"><input type="radio" name="bedroom" id="radios-3" value="4"> 4</label>
+                        </div>
+                    </div>
+                    <!-- Button -->
+                    <div class="form-group">
+                        <label class="col-md-4 control-label" for="singlebutton">Submittion</label>
+                        <div class="col-md-4">
+                            
+                                <button type="submit" id="singlebutton" name="submittion" class="btn btn-primary">  OK  </button>
+                           
+                        </div>
+                    </div>
+                </fieldset>
+            </form>
+
+        </div>
+        <div class="span"></div>
+    </div>
+    <div class="footer"> </div>
+</div>
+
+</body>
+</html>
